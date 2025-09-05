@@ -11,3 +11,28 @@ CALCULATE(
     DISTINCTCOUNT(Activity[uid]),
     LASTDATE('Date'[Date])
 )
+
+**MAU (30D rolling)**
+```DAX
+MAU (30D rolling) = 
+CALCULATE (
+    DISTINCTCOUNT ( Activity[uid] ),
+    DATESINPERIOD ( 'Date'[Date], LASTDATE ( 'Date'[Date] ), -29, DAY )
+)
+
+**Stickiness**
+```DAX
+Stickiness = DIVIDE( [DAU (last day)], [MAU (30D rolling)] )
+
+**Total Sessions**
+```DAX
+Total Sessions = SUM ( Activity[Sessions])
+
+**Total Users**
+```DAX
+Total Users = DISTINCTCOUNT(Users[uid])
+
+
+## 💰 Monetization
+
+
