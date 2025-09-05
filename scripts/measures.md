@@ -35,3 +35,9 @@ CALCULATE (
     DISTINCTCOUNT ( Users[uid] ),
     USERELATIONSHIP ( 'Date'[Date], Users[RegDate] )
 )
+
+---
+
+## 📈 Engagement
+
+**DAU (last day)**
