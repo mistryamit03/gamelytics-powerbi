@@ -6,13 +6,13 @@ Below are the DAX measures used in the Gamelytics Power BI dashboard.
 ------------------------------------------------------------
 ## 📈 Engagement (all engagement metrics)
 ------------------------------------------------------------
-DAU (last day) =
+**DAU (last day)** =
 CALCULATE (
     DISTINCTCOUNT ( Activity[uid] ),
     LASTDATE ( 'Date'[Date] )
 )
 
-MAU (30D rolling) =
+**MAU (30D rolling)** =
 CALCULATE (
     DISTINCTCOUNT ( Activity[uid] ),
     DATESINPERIOD ( 'Date'[Date], LASTDATE ( 'Date'[Date] ), -29, DAY )
