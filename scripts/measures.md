@@ -14,3 +14,4 @@ CALCULATE (
     DISTINCTCOUNT ( Activity[uid] ),
     LASTDATE ( 'Date'[Date] )
 )
+c
