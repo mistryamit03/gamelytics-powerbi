@@ -6,7 +6,7 @@ Formatting (currency/percent) is applied in the model.
 ## 📈 Engagement
 **DAU (last day)**
 ```DAX
---DAU (last day) = 
+DAU (last day) = 
 CALCULATE(
     DISTINCTCOUNT(Activity[uid]),
     LASTDATE('Date'[Date])
