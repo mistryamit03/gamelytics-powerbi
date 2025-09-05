@@ -41,3 +41,4 @@ CALCULATE (
 ## 📈 Engagement
 
 **DAU (last day)**
+```DAX
